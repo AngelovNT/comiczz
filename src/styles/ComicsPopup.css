@@ -1,40 +1,52 @@
 .popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .popup {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-  }
-  
-  .popup-thumbnail {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 16px;
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 14px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: #fff;
+  padding: 24px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 26px;
+  color: #e62429;
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+  border: none;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+.popup-thumbnail {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 8px;
+}
