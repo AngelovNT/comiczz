@@ -1,6 +1,7 @@
 .header {
     padding: 20px;
     text-align: center;
+    background-color:rgb(51, 51, 51);
   }
   
   .format-buttons {
@@ -12,17 +13,14 @@
   }
   
   .format-btn {
-    background-color: #eee;
-    border: 1px solid #ccc;
     padding: 6px 12px;
-    border-radius: 4px;
     cursor: pointer;
+    color: white;
   }
   
   .format-btn.active,
   .format-btn:hover {
-    background-color: #e62429;
-    color: white;
+    color: #e62429;
     border-color: #e62429;
   }
   

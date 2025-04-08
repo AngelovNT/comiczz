@@ -8,13 +8,13 @@ const Header = ({ selectedFormat, onSelectFormat }) => {
     <header className="header">
       <div className="format-buttons">
         {formats.map((format) => (
-          <button
+          <div
             key={format}
             onClick={() => onSelectFormat(format)}
             className={`format-btn ${selectedFormat === format ? 'active' : ''}`}
           >
             {format}
-          </button>
+          </div>
         ))}
       </div>
     </header>
